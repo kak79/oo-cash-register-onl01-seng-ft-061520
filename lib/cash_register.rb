@@ -13,6 +13,7 @@ class CashRegister
         quantity.times do 
             @items << title
         end
+        
     end
     
     def apply_discount        
@@ -25,7 +26,9 @@ class CashRegister
         end
     end
 
-    
+    def items
+        @items
+    end
     
 
 end
